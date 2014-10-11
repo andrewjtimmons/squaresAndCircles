@@ -28,7 +28,7 @@ $(document).ready(function() {
     var images = []
     for (var i = 1; i <= numPhotos; i++) {
       images[i] = new Image;
-      $(images[i]).load().attr('src', "img/" + i + ".JPG");
+      $(images[i]).load().attr('src', "img/" + i + ".jpeg");
       console.log(i+"is loaded")
     }
     return images;

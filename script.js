@@ -6,13 +6,13 @@ $(document).ready(function() {
   var images = createImages();
   var i = 1;
 
+  //if mobile make them use desktop
   if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
           document.write("<h1>Please<br/>look<br/>at<br/>this<br/>on<br/>a<br/>desktop<br/>computer.</h1>")
-        }
-  else {
+  } else {
     initialize();
     
-    setInterval(function() {
+  setInterval(function() {
       redraw()
     }, 472);
   }
@@ -29,6 +29,7 @@ $(document).ready(function() {
     for (var i = 1; i <= numPhotos; i++) {
       images[i] = new Image;
       $(images[i]).load().attr('src', "img/" + i + ".JPG");
+      console.log(i+"is loaded")
     }
     return images;
   }

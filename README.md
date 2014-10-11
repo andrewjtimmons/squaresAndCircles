@@ -1,5 +1,4 @@
 squaresAndCircles
-=================
 
 andrewjtimmons.github.io/squaresAndCircles
 
